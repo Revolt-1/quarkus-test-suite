@@ -10,7 +10,6 @@ import java.time.Duration;
 
 import org.apache.http.HttpStatus;
 import org.awaitility.Awaitility;
-import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 import io.quarkus.test.bootstrap.InfinispanService;
@@ -25,8 +24,6 @@ import io.quarkus.ts.messaging.infinispan.grpc.kafka.books.Book;
 import io.restassured.http.ContentType;
 
 @QuarkusScenario
-// TODO https://github.com/quarkusio/quarkus/issues/25136
-@Tag("fips-incompatible")
 public class InfinispanKafkaIT {
 
     private static final String BOOK_TITLE = "testBook";
