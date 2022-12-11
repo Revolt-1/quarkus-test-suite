@@ -14,7 +14,7 @@ server:
           ssl:
             keystore:
               path: "server.jks"
-              password: "secret"
-              alias: "server"
+              password: "changeit"
+              alias: 1
               provider: "BCFIPS"
               type: "BCFKS"
