@@ -6,3 +6,15 @@ keystore:
   password: changeit
   type: jks
   alias: 1
+server:
+  security:
+    securityRealms:
+      - name: "default"
+        serverIdentities:
+          ssl:
+            keystore:
+              path: "server.jks"
+              password: "secret"
+              alias: "server"
+              provider: "BCFIPS"
+              type: "BCFKS"
